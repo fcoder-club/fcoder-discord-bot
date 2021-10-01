@@ -1,0 +1,19 @@
+{
+  "name": "fcoder-discord-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot for FCoder club",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"There is no test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcoder-club/fcoder-discord-bot.git"
+  },
+  "author": "kazoku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fcoder-club/fcoder-discord-bot/issues"
+  },
+  "homepage": "https://github.com/fcoder-club/fcoder-discord-bot#readme"
+}
