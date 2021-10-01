@@ -20,7 +20,7 @@
     "homepage": "https://github.com/fcoder-club/fcoder-discord-bot#readme",
     "dependencies": {
         "axios": "^0.22.0",
-        "canvg": "^3.0.7",
+        "canvg": "3.0.7",
         "discord.js": "^12.5.3",
         "discord.js-commando": "^0.12.3",
         "knex": "^0.95.11",
