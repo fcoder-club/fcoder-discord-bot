@@ -1,12 +1,13 @@
 {
-  "name": "fcoder-discord-bot",
-  "version": "1.0.0",
-  "description": "A Discord bot for FCoder club",
-  "main": "index.js",
-  "scripts": {
-      "test": "echo \"There is no test\"",
-      "worker": "node src/index.js"
-  },
+    "name": "fcoder-discord-bot",
+    "version": "1.0.0",
+    "description": "A Discord bot for FCoder club",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "patch-package",
+        "test": "echo \"There is no test\"",
+        "worker": "node src/index.js"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/fcoder-club/fcoder-discord-bot.git"
@@ -19,14 +20,14 @@
     "homepage": "https://github.com/fcoder-club/fcoder-discord-bot#readme",
     "dependencies": {
         "axios": "^0.22.0",
+        "canvg": "^3.0.7",
         "discord.js": "^12.5.3",
         "discord.js-commando": "^0.12.3",
         "knex": "^0.95.11",
         "mz": "^2.7.0",
-        "sharp": "^0.29.1",
+        "patch-package": "^6.4.7",
         "sqlite": "^4.0.23",
         "sqlite3": "^5.0.2",
-        "canvg": "^3.0.7",
         "svg2img": "^0.9.2"
     }
 }
