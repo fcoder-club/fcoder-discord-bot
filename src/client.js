@@ -9,7 +9,7 @@ const {SQLiteProvider, CommandoClient} = require("discord.js-commando");
         process.exit(1);
     }
     const client = new CommandoClient({
-        commandPrefix: '$',
+        commandPrefix: '^',
         owner: ["390496098051162114"]
     });
     console.log("Registering commands...");
