@@ -27,7 +27,7 @@ module.exports = class NCovCommand extends Command {
     }
 
     run(message, args, fromPattern, result) {
-        return getData(args.country || "")
+        return getData(args.country)
             .then(async res => {
                 if (res.status === 404) return message.reply(MESSAGES.COUNTRY_NOT_FOUND);
                 if (res.status !== 200) return message.reply(`Error ${res.status}`);

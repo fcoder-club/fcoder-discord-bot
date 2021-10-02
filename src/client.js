@@ -17,6 +17,7 @@ const {SQLiteProvider, CommandoClient} = require("discord.js-commando");
         .registerGroups([
             ["stats", "Statistics"],
             ["util", "Utilities"],
+            ["manager", "Manager"],
         ])
         .registerDefaultTypes()
         .registerCommandsIn(path.join(__dirname, "commands"))
