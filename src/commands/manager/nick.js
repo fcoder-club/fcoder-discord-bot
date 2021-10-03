@@ -33,10 +33,8 @@ module.exports = class Nick extends Command {
         let codeArr = args.code.split("");
         codeArr = codeArr.map((code) => code.charAt(0).toUpperCase() + code.charAt(1).toUpperCase() + code.slice(2));
 
-        message.reply(nameArr.join(" ") + " - " + codeArr.join(""));
-        return;
-        message.member
-            .setNickname(args.name.replaceAll("-", " ") + " - " + args.code)
+        return message.member
+            .setNickname(nameArr.join(" ") + " - " + codeArr.join(""))
             .then(() => message.reply("Done"));
     }
 };
