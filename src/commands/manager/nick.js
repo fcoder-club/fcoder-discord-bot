@@ -11,14 +11,13 @@ module.exports = class Nick extends Command {
             group: "manager",
             args: [
                 {
-                    key: "name",
-                    prompt: "name",
-                    type: "string",
-                    default: "",
+                    key: "member",
+                    prompt: "member",
+                    type: "member",
                 },
                 {
-                    key: "code",
-                    prompt: "code",
+                    key: "nick",
+                    prompt: "nick",
                     type: "string",
                     default: "",
                 },
@@ -27,14 +26,6 @@ module.exports = class Nick extends Command {
     }
 
     run(message, args, fromPattern, result) {
-        let nameArr = args.name.split("-");
-        nameArr = nameArr.map((name) => name.charAt(0).toUpperCase() + name.slice(1));
-
-        let codeArr = args.code.split("");
-        codeArr = codeArr.map((code) => code.charAt(0).toUpperCase() + code.charAt(1).toUpperCase() + code.slice(2));
-
-        return message.member
-            .setNickname(nameArr.join(" ") + " - " + codeArr.join(""))
-            .then(() => message.reply("Done"));
+        return args.member.setNickname(args.nick).then(() => message.reply("Done"));
     }
 };
